@@ -1,0 +1,7 @@
+Shared-memory version of Intel(R) Distribution for LINPACK* Benchmark
+Stress test 10-16-2020
+3                   # number of tests
+5000 10000 16384    # problem sizes
+5000 10000 16384    # leading dimensions
+4 4 8               # times to run a test (5s 39s )average time each
+8 8 8               # alignment values (in KBytes)
