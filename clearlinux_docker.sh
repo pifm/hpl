@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-sudo apt-get update -qq && sudo apt-get upgrade -yqq && sudo apt -y install docker.io
-sudo apt-get install 
+sudo swupd bundle-add containers-basic
 sudo usermod -aG docker ${USER}
 curl https://raw.githubusercontent.com/pifm/hpl/main/ubuntu.dockerfile -o ubuntu.dockerfile
 curl https://raw.githubusercontent.com/pifm/hpl/main/clearlinux.dockerfile -o clearlinux.dockerfile
