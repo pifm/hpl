@@ -13,8 +13,6 @@ class MatrixMultiplication:
         self._K = K
         self._a = np.array(np.random.random((M, N)), dtype=np.double, order='C', copy=False)
         self._b = np.array(np.random.random((N, K)), dtype=np.double, order='C', copy=False)
-        self._ta = tf.constant(self._a)
-        self._tb = tf.constant(self._b)
         pass
 
     def setup(self, M: int, N: int, K: int):
